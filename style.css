@@ -73,4 +73,81 @@
   button:hover {
     background-color: #27ae60;
   }
-  
+
+   @media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    #score {
+        font-size: 1rem;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(4, 90px); /* Slightly smaller columns */
+        grid-template-rows: repeat(4, 90px);
+    }
+
+    .card {
+        width: 90px; /* Smaller cards for tablet */
+        height: 90px;
+        font-size: 1.8rem; /* Adjust font size */
+    }
+
+    button {
+        padding: 12px 18px; /* Adjust button size */
+    }
+}
+
+/* Media Query for small devices (smartphones, up to 600px wide) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.4rem; /* Smaller title for mobile */
+    }
+
+    #score {
+        font-size: 1rem;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(4, 80px); /* Use 3 columns on small screens */
+        grid-template-rows: repeat(4, 80px); /* Keep 4 rows */
+    }
+
+    .card {
+        width: 80px; /* Smaller cards */
+        height: 80px;
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    button {
+        width: 100%; /* Full-width button on mobile */
+        padding: 12px;
+    }
+}
+
+/* Media Query for very small devices (portrait phones, up to 400px wide) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.2rem; /* Even smaller title */
+    }
+
+    #score {
+        font-size: 0.9rem; /* Smaller score font */
+    }
+
+    .game-board {
+        grid-template-columns: repeat(4, 70px); /* Two columns for very small screens */
+        grid-template-rows: repeat(4, 70px); /* 4 rows */
+    }
+
+    .card {
+        width: 70px; /* Even smaller cards */
+        height: 70px;
+        font-size: 1.2rem; /* Smaller text */
+    }
+
+    button {
+        padding: 10px; /* Adjust button size */
+    }
+}
